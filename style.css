@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imgs/overcast-clouds-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(49, 49, 49);
+}
+
+.header-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inter;
+  color: #fff;
+}
+
+.kinda-logo {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.kinda-logo span {
+  color: #000;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+header form {
+  width: 350px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 10px;
+}
+
+header form button {
+  height: 100%;
+  width: 14%;
+  border: none;
+  background: url(./imgs/loupe.svg) black center no-repeat;
+  background-size: 20px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-right: 1px solid black;
+  transition: background-color 0.4s;
+}
+
+header form button:hover {
+  background-color: rgb(49, 49, 49);
+  background-image: url(./imgs/loupe-hover.svg);
+}
+
+header form input {
+  border: none;
+  height: 100%;
+  width: 86%;
+  padding: 0 10px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  font-size: 17px;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+}
+
+header form input:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+header form input:focus {
+  outline: none;
+}
+
+.use-geolocation-button {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.use-geolocation-button:hover {
+  background-color: rgb(49, 49, 49);
+  color: #000;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 100px 0;
+  border: 2px solid rgb(49, 49, 49);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: Inter;
+  font-size: 25px;
+}
+
+.current {
+  background-color: rgba(49, 49, 49, 0.8);
+  padding: 20px 10px;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.current h2 {
+  text-align: center;
+}
+
+.curr-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.curr-weather img {
+  width: 80px;
+}
+
+.curr-wind {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.after {
+  background-color: rgba(131, 131, 131, 0.5);
+}
+
+.weather-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 2px solid rgb(49, 49, 49);
+}
+
+.weather-block div {
+  width: 10%;
+}
+
+.weather-block .next-date {
+  width: 150px;
+}
+
+footer {
+  color: #fff;
+  font-family: inter;
+  height: 100px;
+}
+
+.footer-container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1600px) {
+  body {
+    background-size: 3100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 785px) {
+  header form {
+    width: 300px;
+    height: 40px;
+  }
+
+  .use-geolocation-button {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  header form {
+    width: 200px;
+  }
+
+  header form button {
+    width: 20%;
+  }
+
+  header form input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 610px) {
+  .current {
+    font-size: 22px;
+  }
+  .weather-block {
+    padding: 20px 10px;
+  }
+
+  .weather-block div {
+    width: 25%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 200px;
+  }
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  header form {
+    width: 300px;
+  }
+
+  .use-geolocation-button {
+    width: 200px;
+  }
+
+  .wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: 95%;
+  }
+}
