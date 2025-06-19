@@ -59,6 +59,7 @@ header form button {
   border-bottom-left-radius: 9px;
   border-right: 1px solid black;
   transition: background-color 0.4s;
+  cursor: pointer;
 }
 
 header form button:hover {
@@ -97,6 +98,7 @@ header form input:focus {
   font-size: 15px;
   font-weight: 600;
   transition: background-color 0.4s, color 0.4s;
+  cursor: pointer;
 }
 
 main{
