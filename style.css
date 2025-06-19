@@ -99,6 +99,10 @@ header form input:focus {
   transition: background-color 0.4s, color 0.4s;
 }
 
+main{
+  min-height: 600px;
+}
+
 .use-geolocation-button:hover {
   background-color: rgb(49, 49, 49);
   color: #000;
