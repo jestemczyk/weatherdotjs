@@ -1,6 +1,6 @@
 # weatherdotjs
 mini website for watching weather)
-## [link of the wibsite](https://jestemczyk.github.io/weatherdotjs/)
+## [link of the website](https://jestemczyk.github.io/weatherdotjs/)
 
 ## What was used for this website?
 ### langs
